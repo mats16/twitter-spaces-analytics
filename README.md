@@ -1,49 +1,46 @@
-# Dev container for AWS Amplify
+# Getting Started with Create React App
 
-This is a codespace template for AWS Amplify in **GitHub Codespace**.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-public dockder image for this codespace:
+## Available Scripts
 
-`ghcr.io/mats16/devcontainer-for-aws-amplify:latest` [Github Container Registry](https://github.com/mats16/devcontainer-for-aws-amplify/pkgs/container/devcontainer-for-aws-amplify)
+In the project directory, you can run:
 
-## Configure AWS CLI V2 with AWS SSO
+### `npm start`
 
-```bash
-aws configure sso --profile default
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The following example generate the SSO profile with `default` as the profile name:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-```
-$ aws configure sso --profile default
+### `npm test`
 
-SSO start URL [None]: https://pahud-sso.awsapps.com/start                                                                                                                               
-SSO Region [None]: us-east-1                                                                                                                                                            
-Attempting to automatically open the SSO authorization page in your default browser.
-If the browser does not open or you wish to use a different device to authorize this request, open the following URL:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-https://device.sso.us-east-1.amazonaws.com/
+### `npm run build`
 
-Then enter the code:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-DJHN-QKRK
-The only AWS account available to you is: 123456789012
-Using the account ID 123456789012
-The only role available to you is: AdministratorAccess
-Using the role name "AdministratorAccess"
-CLI default client Region [None]: ap-northeast-1                                                                     
-CLI default output format [None]:                                                                                    
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-To use this profile, specify the profile name using --profile, as shown:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-aws s3 ls --profile default        
-```
+### `npm run eject`
 
-## Configure `credential_process` for another profile
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-The `default` profile is already configured.
-If you want to use another profile, Please configure as shown below.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```sh
-aws configure set credential_process aws-sso-credential-process --profile <profile_name>
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
