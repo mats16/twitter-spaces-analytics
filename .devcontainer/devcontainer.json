@@ -1,6 +1,6 @@
 {
     "name": "Dev Container Definition - AWS Amplify",
-    "image": "ghcr.io/mats16/devcontainer-for-aws-amplify:latest",
+    "image": "ghcr.io/mats16/devcontainer-for-aws-amplify:latest-alpine",
     "mounts": [
         "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
     ],
