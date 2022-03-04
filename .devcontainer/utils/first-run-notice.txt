@@ -1,0 +1,10 @@
+👋 Welcome! You are on a custom image defined in your devcontainer.json file.
+
+Login to AWS SSO: `aws configure sso --profile default`
+
+Create a new React App: `npx create-react-app . --template typescript` & `npm start`
+Create new Vue app: `npx @vue/cli create .` & `npm run serve --open`
+
+Initialize a new backend: `amplify init`
+
+For more information on AWS Amplify, see: https://docs.amplify.aws/start/
